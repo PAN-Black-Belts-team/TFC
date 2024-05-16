@@ -21,7 +21,7 @@ jobs:
         terraform_version: 1.8.3
         cli_config_credentials_token: ${{ secrets.TFC_TOKEN }}
 
-    - name: Terraform Login
+    - name: Terraform Login terraform login [app.terraform.io]
       env:
         TFC_TOKEN: ${{ secrets.TFC_TOKEN }}
       run: echo $TFC_TOKEN | terraform login -token
