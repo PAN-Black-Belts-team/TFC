@@ -12,6 +12,8 @@ terraform {
 
 provider "aws" {
   region = "eu-west-1"
+  access_key = "AKIA3GBJQ3IPXNZWFOGX"
+  secret_key = "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"
 }
 
 module "ec2_instance" {
